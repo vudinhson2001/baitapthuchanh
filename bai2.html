@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    mang = [6, 9, 16, 18, 21, 27, 30, 39]
+    let a = +prompt("nhập giá trị tìm: ");
+    let count = 0
+
+    function viTri(a) {
+        for (let i = 0; i < mang.length; i++) {
+            if (a === mang[i]) {
+                count++;
+                alert(mang[i] + " có vị trí: " + i)
+            }
+        }
+        if (count === 0) {
+            alert(" không có trong mảng")
+        }
+    }
+
+
+    viTri(a)
+</script>
+
+</body>
+</html>
